@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <!--Font Awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--custom css styling-->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-user-graduate"></i>Enroll Ease</h1>
+        <p>Easy enrolling.</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+        <h2 class="fas fa-user-plus">Register new student</h2>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Enter student name" required>
+            <input type="text" id="studentId" placeholder="Enter student ID" required>
+            <input type="email" id="email" placeholder="Enter student email" required>
+            <input type="text" id="contact" placeholder="Enter student contact number" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i>Register</button>
+        </form>    
+        </section>
+
+        <section class="display-section">
+            <h2> <i class="fas fa-list"></i>Registered Students</h2>
+            <div id="studentList" class="student-list"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
