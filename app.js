@@ -67,6 +67,14 @@ form.addEventListener('submit',function(e){
 
     if(!validateForm(name,id,email,contact)) return;
 
+    //For unique student ID
+
+    const duplicate = students.some(student => student.id === id);
+    if(duplicate){
+        alert("Student ID already exists.");
+        return;
+    }
+
     students.push({ name , id , email , contact});
     saveToLocalStorage();
     renderStudents();
