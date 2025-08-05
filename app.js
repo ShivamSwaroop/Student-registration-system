@@ -89,7 +89,7 @@ function editStudent(index){
 //Delete Student entry
 function deleteStudent(index){
     if(confirm("Are you sure you want to delete this record ? ")){
-        students,splice(index, 1);
+        students.splice(index, 1);
         saveToLocalStorage();
         renderStudents();
     }
