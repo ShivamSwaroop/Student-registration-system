@@ -3,6 +3,8 @@
 
 A responsive, interactive student registration system built using HTML, CSS, and JavaScript (DOM Manipulation) — complete with data persistence using localStorage and enhanced with Font Awesome icons and modern animations.
 
+Github repository : https://github.com/ShivamSwaroop/Student-registration-system
+
 # Features
 
  Register new students with details:  
